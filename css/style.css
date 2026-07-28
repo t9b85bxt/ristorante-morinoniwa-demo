@@ -400,7 +400,7 @@ p {
   position: relative;
   min-height: 100svh;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   overflow: hidden;
 }
 
@@ -419,7 +419,7 @@ p {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(14, 17, 10, 0.55) 0%, rgba(14, 17, 10, 0.24) 38%, rgba(14, 17, 10, 0) 62%),
-    linear-gradient(0deg, rgba(14, 17, 10, 0.78) 0%, rgba(14, 17, 10, 0.18) 48%, rgba(14, 17, 10, 0) 78%);
+    linear-gradient(180deg, rgba(14, 17, 10, 0.78) 0%, rgba(14, 17, 10, 0.18) 48%, rgba(14, 17, 10, 0) 78%);
 }
 
 .hero-content {
@@ -429,7 +429,7 @@ p {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 32px 100px;
+  padding: calc(var(--header-h) + 56px) 32px 0;
 }
 
 .hero-en {
@@ -1190,7 +1190,7 @@ p {
   }
 
   .hero-content {
-    padding: 0 22px 84px;
+    padding: calc(var(--header-h) + 40px) 22px 0;
   }
 
   .hero-actions {
